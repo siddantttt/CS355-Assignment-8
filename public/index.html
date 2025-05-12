@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Social</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="frame">
+    <div class="title">🔐 Secure Social</div>
+
+    <div id="loginScreen">
+      <div class="form">
+        Username: <input type="text" id="loginUsername">
+        Password: <input type="password" id="loginPassword">
+        <button id="loginBtn">Login</button>
+      </div>
+      <p>Don't have an account? <a href="#" id="registerLink">Register</a></p>
+    </div>
+
+    <div id="registerScreen" class="hidden">
+      <div class="form">
+        Username: <input type="text" id="registerUsername">
+        Password: <input type="password" id="registerPassword">
+        Name: <input type="text" id="registerName">
+        Email: <input type="email" id="registerEmail">
+        <button id="registerBtn">Register</button>
+      </div>
+      <p>Already have an account? <a href="#" id="loginLink">Login</a></p>
+    </div>
+
+    <div id="homeScreen" class="hidden">
+      <p>Welcome <span id="name"></span>! (<span id="username"></span>)</p>
+      <button id="logoutBtn">Logout</button>
+      <hr>
+      <div class="form">
+        Name: <input type="text" id="updateName">
+        Email: <input type="email" id="updateEmail">
+        <button id="updateBtn">Update Info</button>
+        <button id="deleteBtn" class="critical">Delete Profile</button>
+      </div>
+      <hr>
+      <div>All Users:</div>
+      <ul id="userlist"></ul>
+    </div>
+
+    <div id="error" class="critical"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
